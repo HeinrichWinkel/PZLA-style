@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "PZLA Statystyki – Nowy Styl",
+  "version": "1.0",
+  "description": "Nowoczesny motyw sportowy dla statystyka.pzla.pl",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://statystyka.pzla.pl/*"],
+      "js": ["content.js"],
+      "css": ["theme.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
